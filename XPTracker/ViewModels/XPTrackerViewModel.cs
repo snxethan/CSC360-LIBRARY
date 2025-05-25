@@ -1,6 +1,7 @@
 ﻿using System.Collections.ObjectModel;
 using System.Windows.Input;
 using XPTracker.Services;
+using XPTracker.Mediator;
 
 namespace XPTracker.ViewModels
 {
@@ -8,6 +9,7 @@ namespace XPTracker.ViewModels
     {
         private int _playerCount = 1;
         private string? _currentFilePath;
+        private readonly IXPMediator _mediator = new XPMediator();
 
         public ObservableCollection<Player> Players
         {
@@ -46,19 +48,27 @@ namespace XPTracker.ViewModels
             Players.Clear();
             _playerCount = 0;
             _currentFilePath = null;
+            PlayerDataManager.ClearSession();
+            _mediator.NotifyNewSessionStarted();
         }
 
         private void AddPlayer()
         {
-            Players.Add(new Player());
+            var player = new Player();
+            player.SetMediator(_mediator);
+            Players.Add(player);
+            _mediator.NotifyPlayerAdded(player);
             OnPropertyChanged(nameof(Players));
         }
 
         private void RemovePlayer(Player player)
         {
             if (player != null)
+            {
                 Players.Remove(player);
-            _playerCount--;
+                _mediator.NotifyPlayerRemoved(player);
+                OnPropertyChanged(nameof(Players));
+            }
         }
 
         private void ModifyXP((Player player, int amount) data)
@@ -76,6 +86,7 @@ namespace XPTracker.ViewModels
             }
 
             await PlayerDataManager.SaveToFile(Players);
+            _mediator.NotifyFileSaved(PlayerDataManager.CurrentFilePath);
         }
 
         private async Task SavePlayersAs()
@@ -87,6 +98,7 @@ namespace XPTracker.ViewModels
             if (success)
             {
                 await Application.Current.MainPage.DisplayAlert("Success", $"File saved at:\n{filePath}", "OK");
+                _mediator.NotifyFileSaved(filePath);
             }
         }
 
@@ -97,8 +109,12 @@ namespace XPTracker.ViewModels
 
             Players.Clear();
             foreach (var player in loadedPlayers)
+            {
+                player.SetMediator(_mediator);
                 Players.Add(player);
+            }
 
+            _mediator.NotifyFileLoaded(loadedPlayers);
             await Application.Current.MainPage.DisplayAlert("Success", "Players loaded successfully.", "OK");
         }
     }
