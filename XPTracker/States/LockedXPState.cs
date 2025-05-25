@@ -4,6 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
+// Locked XP State for Player
 namespace XPTracker.States
 {
     internal class LockedXPState : IPlayerXPState
