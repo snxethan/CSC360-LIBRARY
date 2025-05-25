@@ -3,6 +3,7 @@ using System.Runtime.CompilerServices;
 
 using System.ComponentModel;
 using System.Runtime.CompilerServices;
+using XPTracker.Mediator;
 
 public class Player : INotifyPropertyChanged
 {
@@ -18,7 +19,21 @@ public class Player : INotifyPropertyChanged
     public int XP
     {
         get => _xp;
-        set { _xp = Math.Max(0, value); OnPropertyChanged(); }
+        set
+        {
+            int oldXP = _xp;
+            _xp = Math.Max(0, value);
+            OnPropertyChanged();
+            _mediator?.NotifyXPChanged(this, oldXP, _xp);
+        }
+    }
+
+
+
+    private IXPMediator? _mediator;
+    public void SetMediator(IXPMediator mediator)
+    {
+        _mediator = mediator;
     }
 
     public Player()
