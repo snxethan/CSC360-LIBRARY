@@ -1,14 +1,13 @@
 ﻿using System.Collections.ObjectModel;
-using System.IO;
-using System.Text.Json;
 using System.Windows.Input;
+using XPTracker.Services;
 
 namespace XPTracker.ViewModels
 {
     public class XPTrackerViewModel : BindableObject
     {
         private int _playerCount = 1;
-        private string _currentFilePath;
+        private string? _currentFilePath;
 
         public ObservableCollection<Player> Players
         {
@@ -39,14 +38,20 @@ namespace XPTracker.ViewModels
             SaveCommand = new Command(async () => await SavePlayers());
             SaveAsCommand = new Command(async () => await SavePlayersAs());
             LoadCommand = new Command(async () => await LoadPlayers());
-            NewCommand = new Command(() => Players.Clear());
+            NewCommand = new Command(NewButton);
+        }
+
+        private void NewButton()
+        {
+            Players.Clear();
+            _playerCount = 0;
+            _currentFilePath = null;
         }
 
         private void AddPlayer()
         {
             Players.Add(new Player());
             OnPropertyChanged(nameof(Players));
-            Console.WriteLine($"Added player {_playerCount - 1}");
         }
 
         private void RemovePlayer(Player player)
@@ -64,97 +69,37 @@ namespace XPTracker.ViewModels
 
         private async Task SavePlayers()
         {
-            if (string.IsNullOrEmpty(_currentFilePath))
+            if (!PlayerDataManager.HasActiveFile)
             {
                 await SavePlayersAs();
                 return;
             }
 
-            try
-            {
-                File.WriteAllText(_currentFilePath, JsonSerializer.Serialize(Players));
-
-                Console.WriteLine($"File saved at: {_currentFilePath}");
-            }
-            catch (Exception ex)
-            {
-                await Application.Current.MainPage.DisplayAlert("Error", $"Failed to save: {ex.Message}", "OK");
-            }
+            await PlayerDataManager.SaveToFile(Players);
         }
-
-
 
         private async Task SavePlayersAs()
         {
-            try
+            var filePath = await PlayerDataManager.PromptSaveFilePath();
+            if (filePath == null) return;
+
+            bool success = await PlayerDataManager.SaveToFile(Players, filePath);
+            if (success)
             {
-                string folderPath = Environment.GetFolderPath(Environment.SpecialFolder.LocalApplicationData);
-
-                string fileName = await Application.Current.MainPage.DisplayPromptAsync(
-                    "Save File",
-                    "Enter a name for your save file:",
-                    "Save",
-                    "Cancel",
-                    "Type your filename here"
-                );
-
-                if (string.IsNullOrWhiteSpace(fileName))
-                    return; // User canceled
-
-                if (!fileName.EndsWith(".ethan"))
-                    fileName += ".ethan";
-
-                _currentFilePath = Path.Combine(folderPath, fileName);
-
-                await SavePlayers();
-
-                await Application.Current.MainPage.DisplayAlert("Success", $"File saved at:\n{_currentFilePath}", "OK");
-            }
-            catch (Exception ex)
-            {
-                await Application.Current.MainPage.DisplayAlert("Error", $"Failed to save file: {ex.Message}", "OK");
+                await Application.Current.MainPage.DisplayAlert("Success", $"File saved at:\n{filePath}", "OK");
             }
         }
 
         private async Task LoadPlayers()
         {
-            try
-            {
-                string folderPath = Environment.GetFolderPath(Environment.SpecialFolder.LocalApplicationData);
-                var files = Directory.GetFiles(folderPath, "*.ethan");
+            var loadedPlayers = await PlayerDataManager.LoadFromFile();
+            if (loadedPlayers == null) return;
 
-                if (files.Length == 0)
-                {
-                    await Application.Current.MainPage.DisplayAlert("No Files Found", "No saved player files found.", "OK");
-                    return;
-                }
+            Players.Clear();
+            foreach (var player in loadedPlayers)
+                Players.Add(player);
 
-                // Let the user pick from existing save files
-                string selectedFile = await Application.Current.MainPage.DisplayActionSheet(
-                    "Select a file to load",
-                    "Cancel",
-                    null,
-                    files.Select(Path.GetFileName).ToArray()
-                );
-
-                if (string.IsNullOrWhiteSpace(selectedFile) || selectedFile == "Cancel")
-                    return; // User canceled
-
-                _currentFilePath = Path.Combine(folderPath, selectedFile);
-                var json = File.ReadAllText(_currentFilePath);
-                var players = JsonSerializer.Deserialize<ObservableCollection<Player>>(json);
-
-                Players.Clear();
-                foreach (var player in players)
-                    Players.Add(player);
-
-                await Application.Current.MainPage.DisplayAlert("Success", $"Loaded file: {selectedFile}", "OK");
-            }
-            catch (Exception ex)
-            {
-                await Application.Current.MainPage.DisplayAlert("Error", $"Failed to load file: {ex.Message}", "OK");
-            }
+            await Application.Current.MainPage.DisplayAlert("Success", "Players loaded successfully.", "OK");
         }
-
     }
 }

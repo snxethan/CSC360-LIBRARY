@@ -3,24 +3,16 @@
   "WorkspaceRootPath": "C:\\PROJECTS\\C#\\Y2Q3\\CSC360_LIBRARY\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{1068ADED-9BA5-498A-828B-FFD9153C013C}|XPTracker\\XPTracker.csproj|c:\\projects\\c#\\y2q3\\csc360_library\\xptracker\\states\\lockedxpstate.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{1068ADED-9BA5-498A-828B-FFD9153C013C}|XPTracker\\XPTracker.csproj|solutionrelative:xptracker\\states\\lockedxpstate.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{1068ADED-9BA5-498A-828B-FFD9153C013C}|XPTracker\\XPTracker.csproj|c:\\projects\\c#\\y2q3\\csc360_library\\xptracker\\states\\doublexpstate.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{1068ADED-9BA5-498A-828B-FFD9153C013C}|XPTracker\\XPTracker.csproj|solutionrelative:xptracker\\states\\doublexpstate.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{1068ADED-9BA5-498A-828B-FFD9153C013C}|XPTracker\\XPTracker.csproj|c:\\projects\\c#\\y2q3\\csc360_library\\xptracker\\states\\normalxpstate.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{1068ADED-9BA5-498A-828B-FFD9153C013C}|XPTracker\\XPTracker.csproj|solutionrelative:xptracker\\states\\normalxpstate.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{1068ADED-9BA5-498A-828B-FFD9153C013C}|XPTracker\\XPTracker.csproj|c:\\projects\\c#\\y2q3\\csc360_library\\xptracker\\states\\iplayerxpstate.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{1068ADED-9BA5-498A-828B-FFD9153C013C}|XPTracker\\XPTracker.csproj|solutionrelative:xptracker\\states\\iplayerxpstate.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{1068ADED-9BA5-498A-828B-FFD9153C013C}|XPTracker\\XPTracker.csproj|c:\\projects\\c#\\y2q3\\csc360_library\\xptracker\\viewmodels\\xptrackerviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{1068ADED-9BA5-498A-828B-FFD9153C013C}|XPTracker\\XPTracker.csproj|solutionrelative:xptracker\\viewmodels\\xptrackerviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1068ADED-9BA5-498A-828B-FFD9153C013C}|XPTracker\\XPTracker.csproj|c:\\projects\\c#\\y2q3\\csc360_library\\xptracker\\services\\playerdatamanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1068ADED-9BA5-498A-828B-FFD9153C013C}|XPTracker\\XPTracker.csproj|solutionrelative:xptracker\\services\\playerdatamanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1068ADED-9BA5-498A-828B-FFD9153C013C}|XPTracker\\XPTracker.csproj|c:\\projects\\c#\\y2q3\\csc360_library\\xptracker\\mainpage.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1068ADED-9BA5-498A-828B-FFD9153C013C}|XPTracker\\XPTracker.csproj|solutionrelative:xptracker\\mainpage.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{1068ADED-9BA5-498A-828B-FFD9153C013C}|XPTracker\\XPTracker.csproj|c:\\projects\\c#\\y2q3\\csc360_library\\xptracker\\mainpage.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
@@ -39,12 +31,24 @@
       "RelativeMoniker": "D:0:0:{1068ADED-9BA5-498A-828B-FFD9153C013C}|XPTracker\\XPTracker.csproj|solutionrelative:xptracker\\app.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{1068ADED-9BA5-498A-828B-FFD9153C013C}|XPTracker\\XPTracker.csproj|c:\\projects\\c#\\y2q3\\csc360_library\\xptracker\\models\\player.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{1068ADED-9BA5-498A-828B-FFD9153C013C}|XPTracker\\XPTracker.csproj|solutionrelative:xptracker\\models\\player.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{1068ADED-9BA5-498A-828B-FFD9153C013C}|XPTracker\\XPTracker.csproj|c:\\projects\\c#\\y2q3\\csc360_library\\xptracker\\states\\iplayerxpstate.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1068ADED-9BA5-498A-828B-FFD9153C013C}|XPTracker\\XPTracker.csproj|solutionrelative:xptracker\\states\\iplayerxpstate.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{1068ADED-9BA5-498A-828B-FFD9153C013C}|XPTracker\\XPTracker.csproj|c:\\projects\\c#\\y2q3\\csc360_library\\xptracker\\mainpage.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{1068ADED-9BA5-498A-828B-FFD9153C013C}|XPTracker\\XPTracker.csproj|solutionrelative:xptracker\\mainpage.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{1068ADED-9BA5-498A-828B-FFD9153C013C}|XPTracker\\XPTracker.csproj|c:\\projects\\c#\\y2q3\\csc360_library\\xptracker\\states\\doublexpstate.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1068ADED-9BA5-498A-828B-FFD9153C013C}|XPTracker\\XPTracker.csproj|solutionrelative:xptracker\\states\\doublexpstate.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1068ADED-9BA5-498A-828B-FFD9153C013C}|XPTracker\\XPTracker.csproj|c:\\projects\\c#\\y2q3\\csc360_library\\xptracker\\states\\normalxpstate.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1068ADED-9BA5-498A-828B-FFD9153C013C}|XPTracker\\XPTracker.csproj|solutionrelative:xptracker\\states\\normalxpstate.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1068ADED-9BA5-498A-828B-FFD9153C013C}|XPTracker\\XPTracker.csproj|c:\\projects\\c#\\y2q3\\csc360_library\\xptracker\\states\\lockedxpstate.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1068ADED-9BA5-498A-828B-FFD9153C013C}|XPTracker\\XPTracker.csproj|solutionrelative:xptracker\\states\\lockedxpstate.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1068ADED-9BA5-498A-828B-FFD9153C013C}|XPTracker\\XPTracker.csproj|c:\\projects\\c#\\y2q3\\csc360_library\\xptracker\\models\\player.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1068ADED-9BA5-498A-828B-FFD9153C013C}|XPTracker\\XPTracker.csproj|solutionrelative:xptracker\\models\\player.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -54,24 +58,25 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 8,
+          "SelectedChildIndex": 2,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 10,
+              "DocumentIndex": 2,
               "Title": "MainPage.xaml.cs",
               "DocumentMoniker": "C:\\PROJECTS\\C#\\Y2Q3\\CSC360_LIBRARY\\XPTracker\\MainPage.xaml.cs",
               "RelativeDocumentMoniker": "XPTracker\\MainPage.xaml.cs",
               "ToolTip": "C:\\PROJECTS\\C#\\Y2Q3\\CSC360_LIBRARY\\XPTracker\\MainPage.xaml.cs",
               "RelativeToolTip": "XPTracker\\MainPage.xaml.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABsAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAABoAAAAAAAAAAAAgwDsAAAARAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-03-08T20:29:11.074Z",
-              "IsPinned": true
+              "IsPinned": true,
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 3,
               "Title": "MainPage.xaml",
               "DocumentMoniker": "C:\\PROJECTS\\C#\\Y2Q3\\CSC360_LIBRARY\\XPTracker\\MainPage.xaml",
               "RelativeDocumentMoniker": "XPTracker\\MainPage.xaml",
@@ -80,17 +85,18 @@
               "ViewState": "AgIAAAAAAAAAAAAAAAAAABwAAABMAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
               "WhenOpened": "2025-03-08T19:26:35.74Z",
-              "IsPinned": true
+              "IsPinned": true,
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 0,
               "Title": "XPTrackerViewModel.cs",
               "DocumentMoniker": "C:\\PROJECTS\\C#\\Y2Q3\\CSC360_LIBRARY\\XPTracker\\ViewModels\\XPTrackerViewModel.cs",
               "RelativeDocumentMoniker": "XPTracker\\ViewModels\\XPTrackerViewModel.cs",
               "ToolTip": "C:\\PROJECTS\\C#\\Y2Q3\\CSC360_LIBRARY\\XPTracker\\ViewModels\\XPTrackerViewModel.cs",
               "RelativeToolTip": "XPTracker\\ViewModels\\XPTrackerViewModel.cs",
-              "ViewState": "AgIAACEAAAAAAAAAAAAYwDoAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAAEAAAAAAAAAAAAAqwEIAAAAuAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-03-08T19:25:54.106Z",
               "IsPinned": true,
@@ -98,7 +104,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 9,
+              "DocumentIndex": 11,
               "Title": "Player.cs",
               "DocumentMoniker": "C:\\PROJECTS\\C#\\Y2Q3\\CSC360_LIBRARY\\XPTracker\\Models\\Player.cs",
               "RelativeDocumentMoniker": "XPTracker\\Models\\Player.cs",
@@ -108,6 +114,19 @@
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-03-08T19:24:29.48Z",
               "IsPinned": true
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "PlayerDataManager.cs",
+              "DocumentMoniker": "C:\\PROJECTS\\C#\\Y2Q3\\CSC360_LIBRARY\\XPTracker\\Services\\PlayerDataManager.cs",
+              "RelativeDocumentMoniker": "XPTracker\\Services\\PlayerDataManager.cs",
+              "ToolTip": "C:\\PROJECTS\\C#\\Y2Q3\\CSC360_LIBRARY\\XPTracker\\Services\\PlayerDataManager.cs",
+              "RelativeToolTip": "XPTracker\\Services\\PlayerDataManager.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAABTAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-25T01:54:18.905Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Bookmark",
@@ -127,59 +146,55 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 10,
               "Title": "LockedXPState.cs",
               "DocumentMoniker": "C:\\PROJECTS\\C#\\Y2Q3\\CSC360_LIBRARY\\XPTracker\\States\\LockedXPState.cs",
               "RelativeDocumentMoniker": "XPTracker\\States\\LockedXPState.cs",
               "ToolTip": "C:\\PROJECTS\\C#\\Y2Q3\\CSC360_LIBRARY\\XPTracker\\States\\LockedXPState.cs",
               "RelativeToolTip": "XPTracker\\States\\LockedXPState.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAAnAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAAxAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-17T11:26:57.514Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-05-17T11:26:57.514Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 8,
               "Title": "DoubleXPState.cs",
               "DocumentMoniker": "C:\\PROJECTS\\C#\\Y2Q3\\CSC360_LIBRARY\\XPTracker\\States\\DoubleXPState.cs",
               "RelativeDocumentMoniker": "XPTracker\\States\\DoubleXPState.cs",
               "ToolTip": "C:\\PROJECTS\\C#\\Y2Q3\\CSC360_LIBRARY\\XPTracker\\States\\DoubleXPState.cs",
               "RelativeToolTip": "XPTracker\\States\\DoubleXPState.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAAdAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABIAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-17T11:26:02.618Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-05-17T11:26:02.618Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 9,
               "Title": "NormalXPState.cs",
               "DocumentMoniker": "C:\\PROJECTS\\C#\\Y2Q3\\CSC360_LIBRARY\\XPTracker\\States\\NormalXPState.cs",
               "RelativeDocumentMoniker": "XPTracker\\States\\NormalXPState.cs",
               "ToolTip": "C:\\PROJECTS\\C#\\Y2Q3\\CSC360_LIBRARY\\XPTracker\\States\\NormalXPState.cs",
               "RelativeToolTip": "XPTracker\\States\\NormalXPState.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABEAAAAFAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABIAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-17T11:25:36.879Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-05-17T11:25:36.879Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 7,
               "Title": "IPlayerXPState.cs",
               "DocumentMoniker": "C:\\PROJECTS\\C#\\Y2Q3\\CSC360_LIBRARY\\XPTracker\\States\\IPlayerXPState.cs",
               "RelativeDocumentMoniker": "XPTracker\\States\\IPlayerXPState.cs",
               "ToolTip": "C:\\PROJECTS\\C#\\Y2Q3\\CSC360_LIBRARY\\XPTracker\\States\\IPlayerXPState.cs",
               "RelativeToolTip": "XPTracker\\States\\IPlayerXPState.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAABUAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA8AAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-17T11:24:01.914Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-05-17T11:24:01.914Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 8,
+              "DocumentIndex": 6,
               "Title": "App.xaml",
               "DocumentMoniker": "C:\\PROJECTS\\C#\\Y2Q3\\CSC360_LIBRARY\\XPTracker\\App.xaml",
               "RelativeDocumentMoniker": "XPTracker\\App.xaml",
@@ -191,7 +206,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
+              "DocumentIndex": 4,
               "Title": "AppShell.xaml",
               "DocumentMoniker": "C:\\PROJECTS\\C#\\Y2Q3\\CSC360_LIBRARY\\XPTracker\\AppShell.xaml",
               "RelativeDocumentMoniker": "XPTracker\\AppShell.xaml",
@@ -203,7 +218,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 7,
+              "DocumentIndex": 5,
               "Title": "MauiProgram.cs",
               "DocumentMoniker": "C:\\PROJECTS\\C#\\Y2Q3\\CSC360_LIBRARY\\XPTracker\\MauiProgram.cs",
               "RelativeDocumentMoniker": "XPTracker\\MauiProgram.cs",
