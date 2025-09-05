@@ -1,4 +1,4 @@
-# CSC360_LIBRARY
+# CSC360-LIBRARY
 This project is a simple XP (Experience Points) Tracker created for the CSC360 course at Neumont College of Computer Science.
 It was built to demonstrate C# programming concepts such as object-oriented design, event handling, and graphical user interface (GUI) development.
 Each branch may represent different labs, exercises, or feature expansions related to coursework.
@@ -33,10 +33,8 @@ _No external libraries beyond .NET are required unless otherwise specified in a 
 1. This repository does not include compiled binaries (.exe) to keep the project clean.
 2. Make sure to always pull the latest branch corresponding to the lab or assignment you are working on.
 
------------------------------------
 
+## Author(s)
 
-Ethan Townsend |
-Neumont College of Computer Science |
-etownsend@student.neumont.edu
+- [**Ethan Townsend (snxethan)**](www.ethantownsend.dev)
 
